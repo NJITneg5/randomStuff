@@ -79,31 +79,31 @@ public class PlaneCreator : MonoBehaviour
                 switch (shapeIndex) //Creates the object of a certain shape based on the dropdown
                 {
                     case 0:
-                        drawnObject = Instantiate(sphere);
+                        drawnObject = Instantiate(sphere, clickPosition, Quaternion.identity);
                         break;
 
                     case 1:
-                        drawnObject = Instantiate(cube, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(cube, clickPosition, Quaternion.identity);
                         break;
 
                     case 2:
-                        drawnObject = Instantiate(cylinder, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(cylinder, clickPosition, Quaternion.identity);
                         break;
 
                     case 3:
-                        drawnObject = Instantiate(capsule, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(capsule, clickPosition, Quaternion.identity);
                         break;
 
                     case 4:
-                        drawnObject = Instantiate(snowman, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(snowman, clickPosition, Quaternion.identity);
                         break;
 
                     case 5:
-                        drawnObject = Instantiate(snowFlake, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(snowFlake, clickPosition, Quaternion.identity);
                         break;
 
                     default:
-                        drawnObject = Instantiate(sphere, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(sphere, clickPosition, Quaternion.identity);
                         break;
                 }
             }
@@ -112,31 +112,31 @@ public class PlaneCreator : MonoBehaviour
                 switch (chosenShape) //Creates the object of a certain shape based on a random number and if the toggle is selected
                 {
                     case 0:
-                        drawnObject = Instantiate(sphere, clickPosition,Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(sphere, clickPosition,Quaternion.identity);
                         break;
 
                     case 1:
-                        drawnObject = Instantiate(cube, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(cube, clickPosition, Quaternion.identity);
                         break;
 
                     case 2:
-                        drawnObject = Instantiate(cylinder, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(cylinder, clickPosition, Quaternion.identity);
                         break;
 
                     case 3:
-                        drawnObject = Instantiate(capsule, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(capsule, clickPosition, Quaternion.identity);
                         break;
 
                     case 4:
-                        drawnObject = Instantiate(snowman, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(snowman, clickPosition, Quaternion.identity);
                         break;
 
                     case 5:
-                        drawnObject = Instantiate(snowFlake, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(snowFlake, clickPosition, Quaternion.identity);
                         break;
 
                     default:
-                        drawnObject = Instantiate(sphere, clickPosition, Quaternion.identity, this.transform.parent) as GameObject;
+                        drawnObject = Instantiate(sphere, clickPosition, Quaternion.identity);
                         break;
                 }
             }
